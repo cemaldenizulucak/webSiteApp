@@ -1,0 +1,167 @@
+.footer{
+    width: 100%;
+    height: 200px;
+    background: #f9f9f9;
+    text-align: left;
+    padding: 40px 0 0px 0px;
+    .footer_main{
+       
+        
+        padding: 0px;
+        height: auto;
+        display: flex;
+        margin: 0px auto !important;
+        justify-content: revert;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        float: left;
+        padding-left: 200px;
+
+        ul{
+            float: left;
+            list-style: none;
+            display: block;
+            a{
+                text-decoration: none;
+                color: #282828;
+                font-family: "PT Sans", sans-serif;
+                text-decoration: none;
+                position: relative;
+                display: block;
+                font-weight: 400;
+                font-size: 13px;
+                padding: 6px 0px 5px 0px;
+                word-break: break-word;
+                transition: all 0.3s ease;
+                background-color: transparent;
+                &:hover{
+                    color: red;
+                }
+            }
+            li{
+                position: relative;
+                padding: 0px;
+
+
+                &:first-child {
+                    font-weight: 600;
+                    font-family: "PT Sans", sans-serif;
+                    margin: 0px;
+                    color: #333333;
+                    font-size: 17px;
+                    padding-bottom: 0;
+                    height: 40px;
+             
+                }
+            }
+        }
+
+    }
+    .footer_right{
+    padding-bottom: 30px;
+    padding-left: 0px;
+    height: auto;
+    display: flex;
+    margin: 0px auto !important;
+    justify-content: revert;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    float: left;
+    padding-left: 100px;
+    
+    
+
+    ul{
+        float: left;
+        list-style: none;
+        
+        width: 100%;
+        display: contents;
+        a{
+            text-decoration: none;
+            color: #282828;
+            font-family: "PT Sans", sans-serif;
+            text-decoration: none;
+            position: relative;
+            display: block;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 6px 0px 5px 0px;
+            word-break: break-word;
+            transition: all 0.3s ease;
+            background-color: transparent;
+            &:hover{
+                color: red;
+            }
+        }
+        li{
+            position: relative;
+            padding: 0px;
+            width: 13%;
+
+
+            &:first-child {
+                width: 100%;
+                font-weight: 600;
+                font-family: "PT Sans", sans-serif;
+                margin: 0px;
+                color: #333333;
+                font-size: 17px;
+                padding-bottom: 0;
+                height: 40px;
+         
+            }
+        }
+        
+        
+    }
+    .footer-e-bulten{
+        p{
+            font-size: 13px;
+        }
+        .footer-e-bulten-content {
+            position: relative;
+            padding: 0px;
+        }
+         #ebulten {
+            padding: 10px 0px;
+            width: 100%;
+            font-size: 13px;
+            border: 1px solid #eee;
+        }
+        #ebulten-gonder {
+            background: #ff0000;
+            color: #fff;
+            padding: 3px 15px;
+            height: 100%;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 23px;
+            border: 1px solid #eee;
+        }
+    }
+    }
+    .footer_down{
+        width: 100%;
+        border-top: 1px solid #e4e4e4;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: auto;
+            float: left;
+            margin: 0px;
+            text-align: center;
+            font-size: 11px;
+        }
+    }
+}
+@media (max-width :800px) {
+	.footer{
+		width: 100%;
+	}
+}

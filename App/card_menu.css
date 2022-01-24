@@ -1,0 +1,74 @@
+.right-card-menu {
+  margin-left: 145px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.right-card-menu .col-top {
+  margin-top: 100px;
+  padding-left: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.right-card-menu .col-top .col-top-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.right-card-menu .col-top select {
+  width: 350px;
+  height: 40px;
+  border: 1px solid #e1e1e1;
+}
+
+.right-card-menu .col-top .col-top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
+.right-card-menu .col-top .col-top-right .multi {
+  margin-right: 15px;
+}
+
+.right-card-menu .col-top .col-top-right i {
+  font-size: 25px;
+  float: left;
+  margin-top: 3px;
+}
+
+@media (max-width: 992px) {
+  .right-card-menu .col-top .col-top-right {
+    width: 750px;
+  }
+}
+
+.right-card-menu .col-group {
+  height: auto;
+  width: 100%;
+  padding: 50px;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 345px 345px 345px;
+  -ms-grid-columns: 375px 375px 375px 375px;
+      grid-template: 345px 345px 345px  / 375px 375px 375px 375px;
+  grid-gap: 15px 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.right-card-menu .col-group .col {
+  text-align: center;
+  padding: 20px;
+  background: #fbfbfb;
+  border: 1px solid #e1e1e1;
+}
+/*# sourceMappingURL=card_menu.css.map */

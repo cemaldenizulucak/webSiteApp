@@ -1,0 +1,149 @@
+.card {
+    width: 100%;
+    height: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;                     
+    #check{
+        display: none;
+        &:checked ~.left-card-menu{
+                
+                left: 0;	
+        }
+        &:checked ~label #btn{
+            left: 250px;
+            opacity: 0;
+            pointer-events: none;			
+        }	
+        &:checked ~label #cancel{
+            left: 240px;
+                        
+        }
+        &:checked ~.right-card-menu{
+            margin-left: 290px;
+            transition:all 0.5s ease;	
+    }
+    
+    
+    }		
+
+        
+        
+        label{
+            #btn {
+                left: 0;
+                font-size: 35px;
+                color: #fbfbfb;
+                border-radius: 4px;
+                background: red;
+                padding: 6px 12px;
+                position: absolute;
+                cursor: pointer;
+                transition:all 0.5s ease;
+            }
+            #cancel{
+                z-index: 1111;
+                left: -240px;
+                font-size: 35px;
+                color: #fbfbfb;
+                border-radius: 4px;
+                background: red;
+                padding: 9px 12px;
+                position: absolute;
+                cursor: pointer;
+                transition:all 0.5s ease;
+            }
+            
+        }
+    .left-card-menu {
+        left: -290px;
+        float: left;
+        height: 83%;				
+        width: 12%;
+        background:#fbfbfb;
+        position: absolute;
+        transition:all 0.5s ease;
+        position: absolute;
+        width: 290px;
+        height: 100%;
+        text-decoration: none;
+            
+            .link{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;		
+                    
+                a{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    line-height: 50px;
+                    font-size: 20px;
+                    color: rgb(0, 0, 0);
+                    padding-left: 40px;
+                    box-sizing: border-box;
+                    border-top: 1px solid rgba(255, 0, 0, 0.1);
+                    border-bottom: 1px solid white;
+                    text-decoration: none;
+
+                }
+                &:hover a{
+                            padding-left: 60px;
+                            display: block;
+                            background: #ff0000;
+                            color: white;
+                            transition: 0.3s ease-in;
+                            pointer-events: auto;
+                            }
+            
+                &:hover ~.ull{
+                        margin-left: 590px;
+                        transition:all 0.5s ease;
+                        top: 0;
+                        
+                    }
+            }
+            ul{
+                
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: list-item;
+                left: -295px;
+                background: #ffffff;
+                position: absolute;
+                width: fit-content;
+                a{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    line-height: 50px;
+                    font-size: 20px;
+                    color: rgb(0, 0, 0);
+                    padding-left: 40px;
+                    box-sizing: border-box;
+                    border-top: 1px solid rgba(255, 0, 0, 0.1);
+                    border-bottom: 1px solid white;
+                    text-decoration: none;
+                    
+
+                }
+                li:hover a{
+                    padding-left: 60px;
+                    display: block;
+                    background: #ff0000;
+                    color: white;
+                    transition: 0.3s ease-in;
+                    }
+            };
+                            
+        }		
+
+
+        
+    }
+    @media (max-width:992px){
+        .card{
+            margin-top: 100px;
+        }
+    }

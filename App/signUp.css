@@ -1,0 +1,60 @@
+.outer-box {
+  padding: 50px 5px 90px 5px;
+  display: block;
+  margin: auto;
+  background: red;
+  border-radius: 5px;
+  width: 32%;
+  height: auto;
+}
+
+.outer-box h1 {
+  text-align: center;
+  color: white;
+}
+
+.outer-box label {
+  display: block;
+  color: white;
+}
+
+.outer-box input {
+  border-radius: 10px;
+  border-style: none;
+  width: 98%;
+  height: 30px;
+  margin-top: 10px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.outer-box .checkbox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.outer-box .checkbox1 .abc {
+  margin-top: 16px;
+}
+
+.outer-box .checkbox1 #checkbox {
+  width: 3%;
+}
+
+.outer-box #signUp {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #009758;
+}
+
+@media (max-width: 822px) {
+  .outer-box {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=signUp.css.map */

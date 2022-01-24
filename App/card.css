@@ -1,0 +1,155 @@
+.card {
+  width: 100%;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.card #check {
+  display: none;
+}
+
+.card #check:checked ~ .left-card-menu {
+  left: 0;
+}
+
+.card #check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card #check:checked ~ label #cancel {
+  left: 240px;
+}
+
+.card #check:checked ~ .right-card-menu {
+  margin-left: 290px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card label #btn {
+  left: 0;
+  font-size: 35px;
+  color: #fbfbfb;
+  border-radius: 4px;
+  background: red;
+  padding: 6px 12px;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card label #cancel {
+  z-index: 1111;
+  left: -240px;
+  font-size: 35px;
+  color: #fbfbfb;
+  border-radius: 4px;
+  background: red;
+  padding: 9px 12px;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card .left-card-menu {
+  left: -290px;
+  float: left;
+  height: 83%;
+  width: 12%;
+  background: #fbfbfb;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  width: 290px;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card .left-card-menu .link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card .left-card-menu .link a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  color: black;
+  padding-left: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 1px solid rgba(255, 0, 0, 0.1);
+  border-bottom: 1px solid white;
+  text-decoration: none;
+}
+
+.card .left-card-menu .link:hover a {
+  padding-left: 60px;
+  display: block;
+  background: #ff0000;
+  color: white;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  pointer-events: auto;
+}
+
+.card .left-card-menu .link:hover ~ .ull {
+  margin-left: 590px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  top: 0;
+}
+
+.card .left-card-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: list-item;
+  left: -295px;
+  background: #ffffff;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.card .left-card-menu ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  color: black;
+  padding-left: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 1px solid rgba(255, 0, 0, 0.1);
+  border-bottom: 1px solid white;
+  text-decoration: none;
+}
+
+.card .left-card-menu ul li:hover a {
+  padding-left: 60px;
+  display: block;
+  background: #ff0000;
+  color: white;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+@media (max-width: 992px) {
+  .card {
+    margin-top: 100px;
+  }
+}
+/*# sourceMappingURL=card.css.map */
